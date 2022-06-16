@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AUTH_TOKEN } from '../constants';
 
 const Header = () => {
   return (
@@ -18,6 +19,14 @@ const Header = () => {
         >
           add to watchlist
         </Link>
+        <div className="flex flex-fixed">
+          <Link
+            to="/login"
+            className="ml1 no-underline black"
+          >
+            login
+          </Link>
+        </div>
       </div>
     </div>
   );

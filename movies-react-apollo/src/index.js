@@ -14,7 +14,10 @@ import {
 
 // 2
 const httpLink = createHttpLink({
+  // api: javier
   uri: 'http://3.87.223.193:80/graphql/'
+  // api eduardo
+  //uri: 'http://34.125.93.144/graphql/'
 });
 
 // 3
